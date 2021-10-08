@@ -1,34 +1,16 @@
 
 public class TestVertex {
 	public static void main(String[]args){
-		
-		String s1 = "hallo";
-		String s2 = "Hallo" .toLowerCase();
-		
-		
-		
-		
-		
-	Vertex v1 = new Vertex(17,4);
-	Vertex v2 = new Vertex(42,23);
-	Vertex v3 = new Vertex(0,0);
-	Vertex v4 = new Vertex(42,23);
 	
+	GeometrischeObjekte o1 = new GeometrischeObjekte(17 ,4, new Vertex(42,23));
+	GeometrischeObjekte o2 = new GeometrischeObjekte(17,4);
+	GeometrischeObjekte o3 = new GeometrischeObjekte(17);
+	GeometrischeObjekte o4 = new GeometrischeObjekte();		
 	
-	
-	System.out.println(v2 .toString());
-	System.out.println(v2);
-	System.out.println(v1.length());
-	System.out.println(v2.length());
-	System.out.println(v3.length());
-	System.out.println(v1.skalarMult(0.8));
-	System.out.println(v1);
-	System.out.println(v1.add(v2));
-	System.out.println(v1);
-	System.out.println(v2);
-	System.out.println(v1.equals(v2));
-	System.out.println(v2.equals(v4));
-	System.out.println(v4.equals(v2));
+	System.out.println(o1 .equals(o2));
+	o2 .moveTo(42,23);
+	System.out.println(o3 .contains(new Vertex	(10,3)));
+	System.out.println(o4);
 	
 	
 	
@@ -42,14 +24,9 @@ public class TestVertex {
 	
 	
 	
-	System.out.println(s1 .contentEquals(s2));
-	System.out.println(s1);
-	System.out.println(s2);
-	System.out.println(s1 == s2);
 	
 	
 	
+	
+		}
 	}
-
-
-}
