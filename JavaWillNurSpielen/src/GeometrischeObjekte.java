@@ -1,14 +1,19 @@
-
+import java.awt.Color;
 public class GeometrischeObjekte {
 
 	public Vertex pos;
 	public double height;
 	public double width;
+	public Color color;
 	
-	public GeometrischeObjekte( double width, double height, Vertex pos){
+	
+	
+	public GeometrischeObjekte( double width, double height, Vertex pos, Color color){
 		this.pos = pos;
 		this.width = width;
 		this.height = height;
+		this.color = color;
+		
 		
 		if(width<0) {
 			width = -width;
@@ -23,7 +28,7 @@ public class GeometrischeObjekte {
 	}
 	
 	public GeometrischeObjekte( double width, double height){
-		 this(width,height,new Vertex(0,0));
+		 this(width,height,new Vertex(0,0),new Color(0,0,0));
 		
 	}
 	

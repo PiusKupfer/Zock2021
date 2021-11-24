@@ -1,12 +1,15 @@
+import java.awt.Color;
+
+
 
 public class SimpleRect extends GeometrischeObjekte{
 	
-	public SimpleRect(double width, double height, Vertex pos) {
-		super(width, height, pos);
+	public SimpleRect(double width, double height, Vertex pos, Color color) {
+		super(width, height, pos,color);
 	}
 	
 	public SimpleRect(double width, double height, double x, double y ) {
-		super(width, height, new Vertex(x,y));
+		super(width, height, new Vertex(x,y),new Color(0,0,0));
 	}
 	
 	@Override public double area() {
