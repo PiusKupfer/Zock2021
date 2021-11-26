@@ -1,12 +1,12 @@
-
+import java.awt.Color;
 public class triangle extends GeometrischeObjekte{
 	
-	public triangle(double width, double height, Vertex pos) {
-		super(width, height, pos);
+	public triangle(double width, double height, Vertex pos,Color color) {
+		super(width, height, pos,color);
 	}
 	
-	public triangle(double width, double height, double x, double y ) {
-		super(width, height, new Vertex(x,y));
+	public triangle(double width, double height, double x, double y, Color color ) {
+		super(width, height, new Vertex(x,y),color);
 	}
 	
 	@Override public double area() {
