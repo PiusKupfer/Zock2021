@@ -20,6 +20,7 @@ public class PaintablesPanels extends SizePanel{
   ShowInFrame.show("Oval", new PaintablesPanels(ps));
  
  }
+
  }
 
  

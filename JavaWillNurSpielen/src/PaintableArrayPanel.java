@@ -8,6 +8,6 @@ public class PaintableArrayPanel extends SizePanel {
 		for(Paintable p:ps)p.PaintTo(g);
 	}
 	public static void main(String[]args) {
-		
+	//	Paintable pa[] = {new PaintableOval(100,50,50,100), new PaintableOval(50,30,50,50)};
 	}
 }
