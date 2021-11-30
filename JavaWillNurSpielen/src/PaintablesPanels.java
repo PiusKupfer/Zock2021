@@ -17,7 +17,7 @@ public class PaintablesPanels extends SizePanel{
 	 ps.add(new PaintableOval(100,50,50,200));
 	 ps.add(new PaintableOval(100,50,30,50));
  
-  ShowInFrame.show("Oval", new PaintablePanel(ps));
+  ShowInFrame.show("Oval", new PaintablesPanels(ps));
  
  }
  }
