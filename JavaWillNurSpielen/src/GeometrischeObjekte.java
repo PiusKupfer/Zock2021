@@ -56,14 +56,14 @@ public class GeometrischeObjekte {
 	
 	
 	
-	public double getwidth() {
+	public double getWidth() {
 		return width;
 		}
-	public double getheight() {
+	public double getHeight() {
 		return height;
 		}
 	
-	public Vertex getpos() {
+	public Vertex getPos() {
 		return pos;
 		}
 	

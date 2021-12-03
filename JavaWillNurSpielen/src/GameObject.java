@@ -5,9 +5,10 @@ public interface GameObject extends Moveable,Paintable {
 	double getHeight();
 	Vertex getPos();
 	Vertex getDeltaPos();
-	void SetDeltaPos();
-	boolean IsLargerThan(GameObject that);
-	boolean IsAbove(GameObject that);
+	void setDeltaPos(Vertex v);
+	boolean isLargerThan(GameObject that);
+	boolean isLeftOf(GameObject that);
+	boolean isAbove(GameObject that);
 	boolean touches(GameObject that);
 	
 }
