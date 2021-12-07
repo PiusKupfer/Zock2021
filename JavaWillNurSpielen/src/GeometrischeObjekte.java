@@ -39,6 +39,9 @@ public class GeometrischeObjekte {
 	public GeometrischeObjekte() {
 		this(10);
 	}
+	public GeometrischeObjekte(Vertex pos) {
+		this(0,0,pos,new Color(235,34,6));
+	}
 	
 	
 	public String toString(){
