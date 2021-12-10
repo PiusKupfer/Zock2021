@@ -12,7 +12,7 @@ public class MoveableImage extends GeometricImage implements GameObject {
 	
 }
 	public MoveableImage(String name, double x, double y,double dX,double dY) {
-		super(name,x,y);
+		super(name , x, y);
 		deltaPos= new Vertex(dX,dY);
 }
 	public boolean isLeftOf(GameObject that) {

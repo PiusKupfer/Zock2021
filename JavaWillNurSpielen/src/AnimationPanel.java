@@ -21,14 +21,16 @@ public class AnimationPanel extends SimpleAnimation {
 	}
 	
 	void reactWhenTouching ( GameObject g1,GameObject g2) {
-		g1.turn();g1.move();
-		g2.turn();g2.move();
+		g1.turn();
+		g1.move();
+		g2.turn();
+		g2.move();
 	}
 
 	public static void main(String[] args) {
 		MoveablePanel p = new AnimationPanel();
-		p.gos.add(new MoveableImage("images/hexe.png",0,0,1,1));
-		p.gos.add(new MoveableImage("images/biene.png",400,400,-1,-1));
+		p.gos.add(new MoveableImage("Hexe.png",0,0,1,1));
+		p.gos.add(new MoveableImage("Biene.png",600,600,-1,-1));
 		ShowInFrame.show(p);
 	}
 

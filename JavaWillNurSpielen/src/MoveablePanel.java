@@ -9,7 +9,7 @@ public class MoveablePanel extends SizePanel {
 	}
 	
 	public void move() {
-		for(GameObject go:gos) go.move();
+		for(GameObject go:gos) {go.move();}
 	}
 	
 	public void doOnTick() {

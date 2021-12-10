@@ -5,9 +5,9 @@ public class GeometricImage extends GeometrischeObjekte implements Paintable{
 
 	ImageIcon icon;
 	
-	public GeometricImage(String filename, double x, double y) {
+	public GeometricImage(String fileName, double x, double y) {
 		super (new Vertex(x,y));
-		icon = new ImageIcon(getClass().getClassLoader().getResource(filename));
+		icon = new ImageIcon(getClass().getClassLoader().getResource(fileName));
 		init();
 		
 	
@@ -27,7 +27,7 @@ public class GeometricImage extends GeometrischeObjekte implements Paintable{
 	
 	}
 public static void main(String[]args) {
-	GeometricImage gi = new GeometricImage("Images/371720.png",10,10);
+	GeometricImage gi = new GeometricImage("Images/biene.png",10,10);
 	System.out.println(gi.width);
 	System.out.println(gi.height);
 	ShowInFrame.show(new PaintablePanel(gi));
